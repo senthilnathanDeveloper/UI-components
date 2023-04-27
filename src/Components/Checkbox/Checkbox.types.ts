@@ -14,5 +14,4 @@ export interface CheckboxProps  {
     className?:string;
     onChange?: (event: ChangeEvent<HTMLInputElement>) => void;
     icon?:boolean;
-
 }

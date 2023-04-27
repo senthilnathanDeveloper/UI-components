@@ -1,9 +1,9 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import { CheckboxProps } from './Checkbox.types'
 import './Checkbox.css'
 
 const Checkbox = ({ variant = 'primary', size = "sm", label, disabled, checked, defaultChecked, name, value, id, className, onChange, required, icon }: CheckboxProps) => {
-
+    // const ref = useRef<HTMLInputElement>(null)
     let variantClass = `with-icon-checkbox-${variant === 'primary' ? "primary" : "error"}`;
     let sizeClass = `with-icon-checkbox-${size === "sm" ? "sm" : "lg"}`;
 
@@ -12,6 +12,18 @@ const Checkbox = ({ variant = 'primary', size = "sm", label, disabled, checked, 
         sizeClass = `without-icon-checkbox-${size === 'sm' ? "sm" : "lg"}`
     }
 
+
+    useEffect(() => {
+        window.addEventListener("keydown",handleCheckbox)
+     },[])
+  
+     const handleCheckbox = (e:any) => {
+      if(e.key ==="Enter"){
+       
+        // ref?.current?.classList.add("add-circle")
+        // console.log("ref",ref)
+      }
+    }
     return (
         <>
             <label className='checkbox-wrapper'>
@@ -27,6 +39,7 @@ const Checkbox = ({ variant = 'primary', size = "sm", label, disabled, checked, 
                         id={id}
                         onChange={onChange}
                         required={required}
+                        
                     />
                 </span>
                 <span className='checkbox-label'>{label}</span>

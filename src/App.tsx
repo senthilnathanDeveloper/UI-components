@@ -15,24 +15,20 @@ function App() {
     console.log("e", e.target.checked)
   }
 
-  //  useEffect(() => {
-  //     window.addEventListener("keydown",handleCheckbox)
-  //  },[])
+ 
 
-  //  const handleCheckbox = (e:any) => {
-  //   if(e.key ==="Enter"){
-  //     console.log("e",e)
-  //   }
-  // }
+  const handleEnter = () => {
+    console.log("clcik")
+  }
 
   return (
     <div className="App">
       <div className='parent'>
 
-        <Checkbox label='Active' variant='primary'  />
+        <Checkbox label='Active' variant='primary'size='lg' icon   />
 
         <div className='child'>
-          <RadioButton aria_Label='Active' value="Active" size='sm' icon />
+          <RadioButton aria_Label='Active' value="Active" size='sm'   />
         </div>
 
 

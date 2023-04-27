@@ -6,6 +6,7 @@
     --neutralGrey: #525252;
     --circleHover: #F0F0F0;
     --selectedCheckbox: #F9EBF9;
+    --focused:#cd54cf;
 }
 
 
@@ -272,4 +273,26 @@
     font-size: 16px;
     line-height: 24px;
     color: var(--neutralGrey);
+}
+
+.with-icon-checkbox-primary:focus-visible{
+    outline: 2px solid var(--focused);
+    outline-offset: 4px;
+    border-radius: 2px;
+}
+.with-icon-checkbox-error:focus-visible{
+    outline: 2px solid var(--focused);
+    outline-offset: 4px;
+    border-radius: 2px;
+}
+
+.without-icon-checkbox-primary:focus-visible{
+    outline: 2px solid var(--focused);
+    outline-offset: 4px;
+    border-radius: 2px;
+}
+.without-icon-checkbox-error:focus-visible{
+    outline: 2px solid var(--focused);
+    outline-offset: 4px;
+    border-radius: 2px;
 }
