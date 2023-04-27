@@ -1,24 +1,42 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { KeyboardEvent, useEffect } from 'react';
 import './App.css';
+import { Button } from './Components/Button/Button';
+import RadioButton from './Components/RadioButton/RadioButton';
+import Checkbox from './Components/Checkbox/Checkbox';
+
 
 function App() {
+  const handleClick = (e: any) => {
+    console.log("event", e)
+    alert("function working")
+  }
+
+  const handleChange = (e: any) => {
+    console.log("e", e.target.checked)
+  }
+
+  //  useEffect(() => {
+  //     window.addEventListener("keydown",handleCheckbox)
+  //  },[])
+
+  //  const handleCheckbox = (e:any) => {
+  //   if(e.key ==="Enter"){
+  //     console.log("e",e)
+  //   }
+  // }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className='parent'>
+
+        <Checkbox label='Active' variant='primary'  />
+
+        <div className='child'>
+          <RadioButton aria_Label='Active' value="Active" size='sm' icon />
+        </div>
+
+
+      </div>
     </div>
   );
 }
