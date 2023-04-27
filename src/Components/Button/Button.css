@@ -1,0 +1,189 @@
+:root {
+  --primary: #4A154B;
+  --primaryWhiteColor: #FFFFFF;
+  --disabled-color: #B8B8B8;
+  --secondary: #FFFFFF;
+  --secondary-hover: #F9EBF9;
+  --description: #7A7A7A;
+  --field-title: #666666;
+  --rectangle-box: #CFCFCF;
+}
+
+button {
+  border: none;
+  background: none;
+}
+
+
+.xs {
+  height: 32px;
+  min-width: 64px;
+}
+
+.xs:disabled {
+  height: 32px;
+  min-width: 64px;
+}
+
+.sm {
+  height: 40px;
+  min-width: 64px;
+}
+
+.sm:disabled {
+  height: 40px;
+  min-width: 64px;
+}
+
+.md {
+  height: 48px;
+  min-width: 64px;
+}
+
+.md:disabled {
+  height: 48px;
+  min-width: 64px;
+}
+
+.lg {
+  height: 56px;
+  min-width: 64px;
+}
+
+.lg:disabled {
+  height: 56px;
+  min-width: 64px;
+}
+
+
+.primary {
+  padding: 4px 16px;
+  background: var(--primary);
+  border-radius: 4px;
+  color: var(--primaryWhiteColor);
+  border: none;
+  cursor: pointer;
+  position: relative;
+  font-family: 'Avenir';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: var(--primaryWhiteColor);
+  gap: 10px;
+
+}
+
+.primary[disabled] {
+  padding: 4px 16px;
+  border-radius: 4px;
+  background: var(--disabled-color);
+  color: var(--primaryWhiteColor);
+  border: none;
+  position: relative;
+  font-family: 'Avenir';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  cursor: default;
+  pointer-events: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: var(--primaryWhiteColor);
+  gap: 10px;
+}
+
+.secondary {
+  padding: 4px 16px;
+  position: relative;
+  background: var(--secondary);
+  border: 1px solid var(--primary);
+  border-radius: 4px;
+  cursor: pointer;
+  color: var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: var(--primary);
+  gap: 10px;
+}
+
+.secondary:hover {
+  background: var(--secondary-hover);
+}
+
+.secondary[disabled] {
+  padding: 4px 16px;
+  position: relative;
+  background: none;
+  border: 1px solid var(--disabled-color);
+  color: var(--disabled-color);
+  border-radius: 4px;
+  cursor: default;
+  pointer-events: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: var(--disabled-color);
+  gap: 10px;
+}
+
+
+.tertiary {
+  padding: 4px 16px;
+  font-family: 'Avenir';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--primary);
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: var(--primary);
+  gap: 10px;
+}
+
+.tertiary:hover {
+  background: var(--secondary-hover);
+  border-radius: 4px;
+}
+
+.tertiary[disabled] {
+  color: var(--disabled-color);
+  background: none;
+  cursor: default;
+  pointer-events: auto;
+  cursor: default;
+  pointer-events: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 16px;
+  gap: 10px;
+  fill: var(--disabled-color);
+}
+
+.full-width {
+  width: 100%;
+}
+
+.full-width:disabled {
+  width: 100%;
+}
+
+.rounded {
+  border-radius: 50px !important;
+}
+
+.rounded:disabled {
+  border-radius: 50px;
+}

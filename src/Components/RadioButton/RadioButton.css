@@ -1,0 +1,274 @@
+:root {
+    /*  --------------------Thinkbridge Colors -------------------------- */
+  
+    /* ------ Light Neutal colors -------------- */
+    --light-neutral-gray-01: #f0f0f0;
+    --light-neutral-gray-02: #e0e0e0;
+    --light-neutral-gray-03: #cccccc;
+    --light-neutral-gray-04: #b8b8b8;
+    --light-neutral-gray-05: #a3a3a3;
+    --light-neutral-gray-06: #8f8f8f;
+    --light-neutral-gray-07: #7a7a7a;
+    --light-neutral-gray-08: #666666;
+    --light-neutral-gray-09: #525252;
+    --light-neutral-gray-10: #292929;
+    --light-neutral-gray-11: #000000;
+    --light-neutral-gray-12: #000000;
+  
+    /* ------ Primary colors = Purple-------------- */
+    --primary-color-01: #f9ebf9;
+    --primary-color-02: #e39fe4;
+    --primary-color-03: #cd54cf;
+    --primary-color-04: #952a97;
+    --primary-color-05: #4a154b;
+  
+    /* ------ Secondary colors = Orange-------------- */
+    --secondary-color-01: #fff1e6;
+    --secondary-color-02: #fed4b4;
+    --secondary-color-03: #fdb882;
+    --secondary-color-04: #fc9b50;
+    --secondary-color-05: #fb7f1e;
+    --secondary-color-06: #df6404;
+  
+    /* ------ Success colors = Light Green-------------- */
+    --success-color-01: #ccfae4;
+    --success-color-02: #9df5cc;
+    --success-color-03: #6ff1b4;
+    --success-color-04: #41ec9c;
+    --success-color-05: #16e484;
+    --success-color-06: #12b76a;
+  
+    /* ------ Error colors = Light Red-------------- */
+    --error-color-01: #f8d1ce;
+    --error-color-02: #f1a7a2;
+    --error-color-03: #eb7d75;
+    --error-color-04: #e45449;
+    --error-color-05: #da2d20;
+  
+    /* ------ Warning colors = Light Red-------------- */
+    --warning-color-01: #fde9ce;
+    --warning-color-02: #fcd29c;
+    --warning-color-03: #fabc6b;
+    --warning-color-04: #f9a639;
+    --warning-color-05: #f79009;
+  
+    /* ------ White color-------------- */
+    --white-color: #ffffff;
+    /* ------------------------------------------------------------------------------- */
+  }
+  
+  .radio {
+    -webkit-appearance: none;
+    appearance: none;
+    margin: 0;
+    border-radius: 100%;
+    transform: translateY(-1px);
+    display: grid;
+    place-content: center;
+  }
+  .radio-without-icon-small {
+    width: 20px;
+    height: 20px;
+  }
+  .radio-without-icon-large {
+    width: 24px;
+    height: 24px;
+  }
+  .radio-without-icon-enabled {
+    background-color: var(--white-color);
+    border: 2.5px solid var(--light-neutral-gray-08);
+  }
+  .radio-without-icon-disabled {
+    background-color: var(--light-neutral-gray-01);
+    border: 2.5px solid var(--light-neutral-gray-04);
+  }
+  .radio-without-icon-enabled-error {
+    background-color: var(--white-color);
+    border: 2.5px solid var(--error-color-05);
+  }
+  
+  .radio-without-icon-small::before {
+    width: 10px;
+    height: 10px;
+  }
+  .radio-without-icon-large::before {
+    width: 13px;
+    height: 13px;
+  }
+  .radio-without-icon::before {
+    content: '';
+    border-radius: 100%;
+    transition: 300ms transform ease-in-out;
+    transform: scale(0);
+  }
+  .radio-without-icon-enabled::before {
+    box-shadow: inset 16px 16px var(--primary-color-05);
+  }
+  
+  .radio-without-icon-disabled::before {
+    box-shadow: inset 16px 16px var(--light-neutral-gray-04);
+  }
+  .radio-without-icon-enabled-error::before {
+    box-shadow: inset 16px 16px var(--error-color-05);
+  }
+  .radio-without-icon-enabled:hover {
+    box-shadow: 0 0 0 12px var(--light-neutral-gray-01);
+  }
+  .radio-without-icon-enabled:focus:hover {
+    outline: 5px solid var(--light-neutral-gray-01);
+    box-shadow: 0 0 0 12px var(--light-neutral-gray-01);
+  }
+  .radio-without-icon-enabled-error:hover {
+    box-shadow: 0 0 0 12px var(--light-neutral-gray-01);
+  }
+  .radio-without-icon-enabled-error:focus:hover {
+    outline: 5px solid var(--light-neutral-gray-01);
+    box-shadow: 0 0 0 12px var(--light-neutral-gray-01);
+  }
+  .radio-without-icon-enabled:checked::before {
+    transform: scale(1);
+  }
+  .radio-without-icon-enabled-error:checked::before {
+    transform: scale(1);
+  }
+  .radio-without-icon-disabled:checked::before {
+    transform: scale(1);
+  }
+  .radio-without-icon-enabled:checked {
+    border: 2.5px solid var(--primary-color-05);
+  }
+  .radio-without-icon-enabled-error:checked {
+    border: 2.5px solid var(--error-color-05);
+  }
+  .radio-without-icon-enabled:checked:hover {
+    outline: 5px solid var(--light-neutral-gray-01);
+    box-shadow: 0 0 0 12px var(--light-neutral-gray-01);
+  }
+  
+  .radio-without-icon-enabled-error:checked:hover {
+    outline: 5px solid var(--light-neutral-gray-01);
+    box-shadow: 0 0 0 12px var(--light-neutral-gray-01);
+  }
+  
+  .radio-without-icon-enabled:focus-visible {
+    outline: 2px solid var(--primary-color-03);
+    outline-offset: 4px;
+  }
+  .radio-without-icon-enabled:focus:active {
+    outline: 5px solid var(--primary-color-01);
+    box-shadow: 0 0 0 12px var(--primary-color-01);
+  }
+  
+  .radio-without-icon-enabled-error:focus-visible {
+    outline: 2px solid var(--primary-color-03);
+    outline-offset: 4px;
+  }
+  .radio-without-icon-enabled-error:focus:active {
+    outline: 5px solid var(--error-color-01);
+    box-shadow: 0 0 0 12px var(--error-color-01);
+  }
+  .radio-without-icon-disabled:focus {
+    outline: none;
+  }
+  
+  .radio-with-icon-small {
+    height: 20px;
+    width: 20px;
+  }
+  .radio-with-icon-large {
+    height: 24px;
+    width: 24px;
+  }
+  
+  .radio-with-icon-enabled {
+    background-color: var(--white-color);
+    border: 2.5px solid var(--light-neutral-gray-08);
+  }
+  .radio-with-icon-disabled {
+    background-color: var(--light-neutral-gray-01);
+    border: 2.5px solid var(--light-neutral-gray-04);
+  }
+  .radio-with-icon-enabled-error {
+    background-color: var(--white-color);
+    border: 2.5px solid var(--error-color-05);
+  }
+  
+  .radio-with-icon-small::before {
+    width: 20px;
+    height: 20px;
+  }
+  .radio-with-icon-large::before {
+    width: 24px;
+    height: 24px;
+  }
+  .radio-with-icon:checked::before {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .radio-with-icon-small:checked::before {
+    content: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' fill='none' height='14px' width='14px' stroke='white' viewBox='0 0 24 24' stroke-width='4' className='w-6 h-6'> <path stroke-linecap='round' stroke-linejoin='round' d='M4.5 12.75l6 6 9-13.5'/></svg> ");
+    padding-top: 4px;
+  }
+  .radio-with-icon-large:checked::before {
+    content: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' fill='none' height='16px' width='16px' stroke='white' viewBox='0 0 24 24' stroke-width='4' className='w-6 h-6'> <path stroke-linecap='round' stroke-linejoin='round' d='M4.5 12.75l6 6 9-13.5'/></svg> ");
+    padding-top: 4px;
+  }
+  
+  .radio-with-icon-enabled:hover {
+    box-shadow: 0 0 0 12px var(--light-neutral-gray-01);
+  }
+  
+  .radio-with-icon-enabled:focus:hover {
+    outline: 5px solid var(--light-neutral-gray-01);
+    box-shadow: 0 0 0 12px var(--light-neutral-gray-01);
+  }
+  
+  .radio-with-icon-enabled-error:hover {
+    box-shadow: 0 0 0 12px var(--light-neutral-gray-01);
+  }
+  .radio-with-icon-enabled-error:focus:hover {
+    outline: 5px solid var(--light-neutral-gray-01);
+    box-shadow: 0 0 0 12px var(--light-neutral-gray-01);
+  }
+  
+  .radio-with-icon-enabled:checked {
+    background: var(--primary-color-05);
+    border: 2.5px solid var(--primary-color-05);
+  }
+  .radio-with-icon-disabled:checked {
+    background: var(--light-neutral-gray-04);
+    border: 2.5px solid var(--light-neutral-gray-04);
+  }
+  .radio-with-icon-enabled-error:checked {
+    background: var(--error-color-05);
+    border: 2.5px solid var(--error-color-05);
+  }
+  
+  .radio-with-icon-enabled:checked:hover {
+    outline: 5px solid var(--light-neutral-gray-01);
+    box-shadow: 0 0 0 12px var(--light-neutral-gray-01);
+  }
+  .radio-with-icon-enabled-error:checked:hover {
+    outline: 5px solid var(--light-neutral-gray-01);
+    box-shadow: 0 0 0 12px var(--light-neutral-gray-01);
+  }
+  
+  .radio-with-icon-enabled:focus:active {
+    outline: 5px solid var(--primary-color-01);
+    box-shadow: 0 0 0 12px var(--primary-color-01);
+  }
+  
+  .radio-with-icon-enabled:focus-visible {
+    outline: 2px solid var(--primary-color-03);
+    outline-offset: 4px;
+  }
+  .radio-with-icon-enabled-error:focus:active {
+    outline: 5px solid var(--error-color-01);
+    box-shadow: 0 0 0 12px var(--error-color-01);
+  }
+  .radio-with-icon-disabled:focus {
+    outline: none;
+  }
+  
