@@ -3,6 +3,8 @@ import './App.css';
 import { Button } from './Components/Button/Button';
 import RadioButton from './Components/RadioButton/RadioButton';
 import Checkbox from './Components/Checkbox/Checkbox';
+import CheckboxGroup from './Components/Checkbox/CheckboxGroup';
+
 
 
 function App() {
@@ -15,20 +17,42 @@ function App() {
     console.log("e", e.target.checked)
   }
 
- 
+
 
   const handleEnter = () => {
     console.log("clcik")
   }
 
+  const options = [
+    { label: 'Option 1', checked: false },
+    { label: 'Option 2', checked: true },
+    { label: 'Option 3', checked: false },
+  ];
   return (
     <div className="App">
       <div className='parent'>
 
-        <Checkbox label='Active' variant='primary'size='lg' icon   />
+        {/* <CheckboxGroup direction="vertical">
+        {options?.map((option) => {
+          return (
+            <>
+                <Checkbox
+                  WithoutIcon
+                  checked
+                  label={option.label}
+                  onChange={() => { }}
+                  size="sm"
+                />
+
+            </>
+          )
+        })}
+        </CheckboxGroup> */}
+
+
 
         <div className='child'>
-          <RadioButton aria_Label='Active' value="Active" size='sm'   />
+          {/* <RadioButton aria_Label='Active' value="Active" size='sm'   /> */}
         </div>
 
 

@@ -9,17 +9,6 @@
     --focused:#cd54cf;
 }
 
-
-/* .sm {
-    width: 16px;
-    height: 16px;
-}
-
-.lg {
-    width: 20px;
-    height: 20px;
-} */
-
 .with-icon-checkbox-sm {
     width: 16px;
     height: 16px;
@@ -33,6 +22,7 @@
 .checkbox-wrapper {
     display: flex;
     gap: 10px;
+    margin-top: 15px;
 }
 
 .with-icon-checkbox-primary {
@@ -275,6 +265,9 @@
     color: var(--neutralGrey);
 }
 
+
+/* Focused state  */
+
 .with-icon-checkbox-primary:focus-visible{
     outline: 2px solid var(--focused);
     outline-offset: 4px;
@@ -295,4 +288,10 @@
     outline: 2px solid var(--focused);
     outline-offset: 4px;
     border-radius: 2px;
+}
+
+
+.horizontal{
+    display: flex;
+    gap: 15px;
 }

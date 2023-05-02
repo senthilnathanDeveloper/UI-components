@@ -1,7 +1,7 @@
 import { ChangeEvent } from "react";
 
 export interface CheckboxProps  {
-    variant?:'primary' |'error';
+    error?:boolean;
     size?:'sm' | 'lg';
     label?:string;
     disabled?:boolean;
@@ -13,5 +13,12 @@ export interface CheckboxProps  {
     required?:boolean;
     className?:string;
     onChange?: (event: ChangeEvent<HTMLInputElement>) => void;
-    icon?:boolean;
+    WithoutIcon?:boolean;
+
+}
+
+
+export interface CheckboxGroupsProps {
+    direction?:'vertical'|'horizontal';
+    children?:any;
 }
