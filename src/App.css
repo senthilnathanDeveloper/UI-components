@@ -2,14 +2,9 @@
   text-align: center;
 }
 .parent{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 50vh;
-}
-.child{
   position: relative;
-  top: 20%;
+  top: 350px;
 }
+
 
 

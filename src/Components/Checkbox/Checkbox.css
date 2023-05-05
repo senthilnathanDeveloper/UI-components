@@ -1,12 +1,12 @@
 :root {
-    --primary: #4A154B;
-    --error: #DA2D20;
-    --primaryGrey: #666666;
-    --disabled: #B8B8B8;
-    --neutralGrey: #525252;
-    --circleHover: #F0F0F0;
-    --selectedCheckbox: #F9EBF9;
-    --focused:#cd54cf;
+    --primary-color-05: #4A154B;
+    --error-color-05: #DA2D20;
+    --light-neutral-gray-08: #666666;
+    --light-neutral-gray-04: #B8B8B8;
+    --light-neutral-gray-09: #525252;
+    --light-neutral-gray-01: #F0F0F0;
+    --primary-color-01: #F9EBF9;
+    --primary-color-03: #cd54cf;
 }
 
 .with-icon-checkbox-sm {
@@ -28,7 +28,7 @@
 .with-icon-checkbox-primary {
     -webkit-appearance: none;
     appearance: none;
-    border: 2px solid var(--primaryGrey);
+    border: 2px solid var(--light-neutral-gray-08);
     outline: none;
     cursor: pointer;
     border-radius: 4px;
@@ -36,19 +36,19 @@
 }
 
 .with-icon-checkbox-primary:hover {
-    box-shadow: 0 0 0 12px var(--circleHover);
+    box-shadow: 0 0 0 12px var(--light-neutral-gray-01);
     position: relative;
 
 }
 
 .with-icon-checkbox-primary:checked {
-    background-color: var(--primary);
+    background-color: var(--primary-color-05);
     position: relative;
     border: none;
 }
 
 .with-icon-checkbox-primary:active {
-    box-shadow: 0 0 0 12px var(--selectedCheckbox);
+    box-shadow: 0 0 0 12px var(--primary-color-01);
     cursor: pointer;
 }
 
@@ -69,11 +69,11 @@
 
 .with-icon-checkbox-primary:disabled {
     background-color: #f0f0f0;
-    border: 2.5px solid var(--primaryGrey);
+    border: 2.5px solid var(--light-neutral-gray-08);
 }
 
 .with-icon-checkbox-primary:checked:disabled {
-    background-color: var(--disabled);
+    background-color: var(--light-neutral-gray-04);
     position: relative;
     border: none;
 }
@@ -84,26 +84,26 @@
 .with-icon-checkbox-error {
     -webkit-appearance: none;
     appearance: none;
-    border: 2px solid var(--error);
+    border: 2px solid var(--error-color-05);
     outline: none;
     cursor: pointer;
     border-radius: 4px;
 }
 
 .with-icon-checkbox-error:hover {
-    box-shadow: 0 0 0 12px var(--circleHover);
+    box-shadow: 0 0 0 12px var(--light-neutral-gray-01);
     position: relative;
 
 }
 
 .with-icon-checkbox-error:checked {
-    background-color: var(--error);
+    background-color: var(--error-color-05);
     position: relative;
     border: none;
 }
 
 .with-icon-checkbox-error:active {
-    box-shadow: 0 0 0 12px var(--selectedCheckbox);
+    box-shadow: 0 0 0 12px var(--primary-color-01);
     cursor: pointer;
 }
 
@@ -124,11 +124,11 @@
 
 .with-icon-checkbox-error:disabled {
     background-color: #f0f0f0;
-    border: 2.5px solid var(--primaryGrey);
+    border: 2.5px solid var(--light-neutral-gray-08);
 }
 
 .with-icon-checkbox-error:checked:disabled {
-    background-color: var(--disabled);
+    background-color: var(--light-neutral-gray-04);
     position: relative;
     border: none;
 }
@@ -158,14 +158,14 @@
 .without-icon-checkbox-primary {
     appearance: none;
     -webkit-appearance: none;
-    border: 2px solid var(--primary);
+    border: 2px solid var(--primary-color-05);
     cursor: pointer;
     border-radius: 4px;
     position: relative;
 }
 
 .without-icon-checkbox-primary:hover {
-    box-shadow: 0 0 0 12px var(--circleHover);
+    box-shadow: 0 0 0 12px var(--light-neutral-gray-01);
     position: relative;
 }
 
@@ -174,7 +174,7 @@
 }
 
 .without-icon-checkbox-primary:active {
-    box-shadow: 0 0 0 12px var(--selectedCheckbox);
+    box-shadow: 0 0 0 12px var(--primary-color-01);
     cursor: pointer;
 }
 
@@ -182,7 +182,7 @@
     content: '';
     display: block;
     position: absolute;
-    background-color: var(--primary);
+    background-color: var(--primary-color-05);
     transform: none;
     top: 2px;
     right: 2px;
@@ -190,7 +190,7 @@
 
 .without-icon-checkbox-primary:disabled {
     background-color: white;
-    border: 2px solid var(--disabled);
+    border: 2px solid var(--light-neutral-gray-04);
 }
 
 .without-icon-checkbox-primary:disabled::before {
@@ -199,7 +199,7 @@
     position: absolute;
     top: 2px;
     left: 2px;
-    background-color: var(--disabled);
+    background-color: var(--light-neutral-gray-04);
     transform: none;
     border: none;
 }
@@ -210,14 +210,14 @@
 .without-icon-checkbox-error {
     appearance: none;
     -webkit-appearance: none;
-    border: 2px solid var(--error);
+    border: 2px solid var(--error-color-05);
     cursor: pointer;
     border-radius: 4px;
     position: relative;
 }
 
 .without-icon-checkbox-error:hover {
-    box-shadow: 0 0 0 12px var(--circleHover);
+    box-shadow: 0 0 0 12px var(--light-neutral-gray-01);
     position: relative;
 }
 
@@ -234,7 +234,7 @@
     content: '';
     display: block;
     position: absolute;
-    background-color: var(--error);
+    background-color: var(--error-color-05);
     transform: none;
     top: 2px;
     right: 2px;
@@ -242,7 +242,7 @@
 
 .without-icon-checkbox-error:disabled {
     background-color: white;
-    border: 2px solid var(--disabled);
+    border: 2px solid var(--light-neutral-gray-04);
 }
 
 .without-icon-checkbox-error:disabled::before {
@@ -251,7 +251,7 @@
     position: absolute;
     top: 2px;
     left: 2px;
-    background-color: var(--disabled);
+    background-color: var(--light-neutral-gray-04);
     transform: none;
     border: none;
 }
@@ -262,30 +262,30 @@
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
-    color: var(--neutralGrey);
+    color: var(--light-neutral-gray-09);
 }
 
 
 /* Focused state  */
 
 .with-icon-checkbox-primary:focus-visible{
-    outline: 2px solid var(--focused);
+    outline: 2px solid var(--primary-color-03);
     outline-offset: 4px;
     border-radius: 2px;
 }
 .with-icon-checkbox-error:focus-visible{
-    outline: 2px solid var(--focused);
+    outline: 2px solid var(--primary-color-03);
     outline-offset: 4px;
     border-radius: 2px;
 }
 
 .without-icon-checkbox-primary:focus-visible{
-    outline: 2px solid var(--focused);
+    outline: 2px solid var(--primary-color-03);
     outline-offset: 4px;
     border-radius: 2px;
 }
 .without-icon-checkbox-error:focus-visible{
-    outline: 2px solid var(--focused);
+    outline: 2px solid var(--primary-color-03);
     outline-offset: 4px;
     border-radius: 2px;
 }
