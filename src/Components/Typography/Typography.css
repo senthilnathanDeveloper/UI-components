@@ -1,0 +1,140 @@
+:root {
+    --heading1: 48px;
+    --heading2: 40px;
+    --heading3: 36px;
+    --heading4: 28px;
+    --heading5:28px;
+    --heading6:24px;
+    --heading7:20px;
+    --paragraph1:18px;
+    --paragraph2:16px;
+    --label1:14px;
+    --label2:12px;
+    --regular: 400;
+    --medium: 400;
+    --semibold: 500;
+    --bold: 800;
+    --textColor:#7A7A7A;
+    --family:'Avenir';
+    --headingLine-spacing1:72px;
+    --headingLine-spacing2:60px;
+    --headingLine-spacing3:54px;
+    --headingLine-spacing4:48px; 
+    --headingLine-spacing5:42px;
+    --headingLine-spacing6:36px;
+    --headingLine-spacing7:30px;
+    --paragraphLine1:26px;
+    --paragraphLine2:24px;
+    --labelLine1:20px;
+    --labelLine2:18px;
+    --letter-spacing:0%;
+
+}
+
+.regular {
+    font-weight: var(--regular);
+    color: var(--textColor);
+    font-family: var(--family);
+}
+
+.medium {
+    font-weight: var(--medium);
+    color: var(--textColor);
+    font-family: var(--family);
+}
+
+.semibold {
+    font-weight: var(--semibold);
+    color: var(--textColor);
+    font-family: var(--family);
+}
+
+.bold {
+    font-weight: var(--bold);
+    color: var(--textColor);
+    font-family: var(--family);
+}
+
+h1 {
+    font-size: var(--heading1);
+    color: var(--textColor);
+    font-family: var(--family);
+    line-height: var(-- --headingLine-spacing1);
+    letter-spacing: var(--letter-spacing);
+}
+
+h2 {
+    font-size: var(--heading2);
+    color: var(--textColor);
+    font-family: var(--family);
+    line-height: var(-- --headingLine-spacing2);
+    letter-spacing: var(--letter-spacing);
+}
+
+h3 {
+    font-size: var(--heading3);
+    color: var(--textColor);
+    font-family: var(--family);
+    line-height: var(-- --headingLine-spacing3);
+    letter-spacing: var(--letter-spacing);
+}
+
+h4 {
+    font-size: var(--heading4);
+    color: var(--textColor);
+    font-family: var(--family);
+    line-height: var(-- --headingLine-spacing4);
+    letter-spacing: var(--letter-spacing);
+}
+h5{
+    font-size: var(--heading5);
+    color: var(--textColor);
+    font-family: var(--family);
+    line-height: var(--headingLine-spacing55);
+    letter-spacing: var(--letter-spacing);
+}
+h6{
+    font-size: var(--heading6);
+    color: var(--textColor);
+    font-family: var(--family);
+    line-height: var(--headingLine-spacing6);
+    letter-spacing: var(--letter-spacing);   
+}
+.head6{
+    font-size: var(--heading7);
+    color: var(--textColor);
+    font-family: var(--family);
+    line-height: var(--headingLine-spacing7);
+    letter-spacing: var(--letter-spacing);   
+}
+
+
+.paragraph1{
+    font-size: var(--paragraph1);
+    color: var(--textColor);
+    font-family: var(--family);
+    line-height: var(--paragraphLine1);
+    letter-spacing: var(--letter-spacing);   
+}
+
+.paragraph2{
+    font-size: var(--paragraph2);
+    color: var(--textColor);
+    font-family: var(--family);
+    line-height: var(--paragraphLine2);
+    letter-spacing: var(--letter-spacing);   
+}
+.label1{
+    font-size: var(--label1);
+    color: var(--textColor);
+    font-family: var(--family);
+    line-height: var(--labelLine1);
+    letter-spacing: var(--letter-spacing);      
+}
+.label2{
+    font-size: var(--label2);
+    color: var(--textColor);
+    font-family: var(--family);
+    line-height: var(--labelLine2);
+    letter-spacing: var(--letter-spacing);      
+}

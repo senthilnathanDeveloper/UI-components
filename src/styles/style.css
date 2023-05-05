@@ -1,0 +1,107 @@
+:root {
+    /*  --------------------Thinkbridge Colors -------------------------- */
+  
+    /* ------ Light Neutal colors -------------- */
+    --light-neutral-gray-01: #f0f0f0;
+    --light-neutral-gray-02: #e0e0e0;
+    --light-neutral-gray-03: #cccccc;
+    --light-neutral-gray-04: #b8b8b8;
+    --light-neutral-gray-05: #a3a3a3;
+    --light-neutral-gray-06: #8f8f8f;
+    --light-neutral-gray-07: #7a7a7a;
+    --light-neutral-gray-08: #666666;
+    --light-neutral-gray-09: #525252;
+    --light-neutral-gray-10: #292929;
+    --light-neutral-gray-11: #000000;
+    --light-neutral-gray-12: #000000;
+  
+    /* ------ Primary colors = Purple-------------- */
+    --primary-color-01: #f9ebf9;
+    --primary-color-02: #e39fe4;
+    --primary-color-03: #cd54cf;
+    --primary-color-04: #952a97;
+    --primary-color-05: #4a154b;
+  
+    /* ------ Secondary colors = Orange-------------- */
+    --secondary-color-01: #fff1e6;
+    --secondary-color-02: #fed4b4;
+    --secondary-color-03: #fdb882;
+    --secondary-color-04: #fc9b50;
+    --secondary-color-05: #fb7f1e;
+    --secondary-color-06: #df6404;
+  
+    /* ------ Success colors = Light Green-------------- */
+    --success-color-01: #ccfae4;
+    --success-color-02: #9df5cc;
+    --success-color-03: #6ff1b4;
+    --success-color-04: #41ec9c;
+    --success-color-05: #16e484;
+    --success-color-06: #12b76a;
+  
+    /* ------ Error colors = Light Red-------------- */
+    --error-color-01: #f8d1ce;
+    --error-color-02: #f1a7a2;
+    --error-color-03: #eb7d75;
+    --error-color-04: #e45449;
+    --error-color-05: #da2d20;
+  
+    /* ------ Warning colors = Light Red-------------- */
+    --warning-color-01: #fde9ce;
+    --warning-color-02: #fcd29c;
+    --warning-color-03: #fabc6b;
+    --warning-color-04: #f9a639;
+    --warning-color-05: #f79009;
+  
+    /* ------ White color-------------- */
+    --white-color: #ffffff;
+    /* ------------------------------------------------------------------------------- */
+
+    /* --------Typography font-size =Heading----------- */
+
+    --heading1: 48px;
+    --heading2: 40px;
+    --heading3: 36px;
+    --heading4: 28px;
+
+    /* ------Typography font-weight ------------- */
+    --regular: 400;
+    --medium: 400;
+    --semibold: 500;
+    --bold: 800;
+
+    /* ---------Typography font-family ------------ */
+
+    --family:'Avenir';
+
+    /* ------Typography line-spacing --------- */
+    --headingLine-spacing1:72px;
+    --headingLine-spacing2:60px;
+    --headingLine-spacing3:54px;
+    --headingLine-spacing4:48px;
+
+    /* Typography Letter-spacing */
+
+    --letter-spacing:0%;
+
+
+    /* ----Box Shadows--- */
+
+        /* Elevated Shadows */
+    --elevated-shadows-spread-light:0px 0px 16px 4px rgba(102, 102, 102, 0.1);
+    --elevated-shadows-spread-default: 0px 0px 18px 6px rgba(102, 102, 102, 0.15);
+    --elevated-shadows-spread-hard:0px 0px 24px 8px rgba(102, 102, 102, 0.2);
+
+
+        /* Key Shadows */
+
+    --key-shadow-bottom-right-light: 4px 4px 8px rgba(102, 102, 102, 0.16);
+    --key-shadow-bottom-right-default:6px 6px 12px rgba(102, 102, 102, 0.18);
+    --key-shadow-bottom-right-hard:8px 8px 16px rgba(102, 102, 102, 0.24);
+
+        /* Drop Shadow */
+
+    --drop-shadow-bottom-light:0px 8px 8px rgba(102, 102, 102, 0.1);
+    --drop-shadow-bottom-default:0px 12px 24px -6px rgba(102, 102, 102, 0.15);
+    --drop-shadow-bottom-hard:0px 16px 32px -8px rgba(102, 102, 102, 0.2);
+  }
+  
