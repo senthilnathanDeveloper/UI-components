@@ -197,6 +197,7 @@
     border-radius: 50%;
     top: 2px;
     left: 2px;
+    transition: all 0.5s;
 }
 
 .toggle-with-words:checked:hover {
