@@ -1,0 +1,251 @@
+:root {
+    --light-neutral-gray-02: #e0e0e0;
+    --light-neutral-gray-06: #8f8f8f;
+    --primary-color-03: #cd54cf;
+    --success-color-04: #41ec9c;
+    --success-color-06: #12b76a;
+    --white-color: #ffffff;
+}
+
+.toggle-without-icon-lg {
+    width: 44px;
+    height: 24px;
+}
+
+.toggle-without-icon-sm {
+    width: 32px;
+    height: 16px;
+}
+
+.toggle-without-icon-lg::after {
+    width: 20px;
+    height: 20px;
+}
+
+.toggle-without-icon-sm::after {
+    width: 12px;
+    height: 12px;
+}
+
+.toggle-without-icon-lg::before {
+    width: 20px;
+    height: 20px;
+}
+
+.toggle-without-icon-sm::before {
+    width: 12px;
+    height: 12px;
+}
+
+.toggle-without-icon {
+    position: relative;
+    appearance: none;
+    background: var(--light-neutral-gray-06);
+    border-radius: 46px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: 0.2s ease-in;
+}
+
+.toggle-without-icon:checked {
+    background: var(--success-color-06);
+}
+
+.toggle-without-icon:checked:hover {
+    background-color: var(--success-color-04);
+}
+
+.toggle-without-icon:checked:focus {
+    outline: 1px solid var(--primary-color-03);
+    outline-offset: 2px;
+}
+
+.toggle-without-icon:focus-visible {
+    outline: 1px solid var(--primary-color-03);
+    outline-offset: 2px;
+}
+
+.toggle-without-icon::after {
+    position: absolute;
+    content: "";
+    top: 2px;
+    left: 2px;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    transition: 0.2s ease-in;
+}
+
+.toggle-without-icon:checked:disabled {
+    background-color: var(--light-neutral-gray-02);
+}
+
+.toggle-without-icon:checked:hover:disabled {
+    background-color: var(--light-neutral-gray-02);
+}
+
+.toggle-without-icon:checked::after {
+    left: 50%;
+}
+
+
+/* Toggle WithIcon */
+.toggle-with-icon {
+    position: relative;
+    appearance: none;
+    background: var(--light-neutral-gray-06);
+    border-radius: 46px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: 0.2s ease-in;
+}
+
+.toggle-with-icon:checked {
+    background: var(--success-color-06);
+}
+
+.toggle-with-icon:checked:hover {
+    background-color: var(--success-color-04);
+}
+
+.toggle-with-icon:checked:focus {
+    outline: 1px solid var(--primary-color-03);
+    outline-offset: 2px;
+}
+
+.toggle-with-icon:focus-visible {
+    outline: 1px solid var(--primary-color-03);
+    outline-offset: 2px;
+}
+
+.toggle-with-icon::after {
+    position: absolute;
+    content: "\268A";
+    top: 2px;
+    left: 2px;
+    background: var(--white-color);
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    transition: 0.2s ease-in;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--light-neutral-gray-06);
+
+}
+
+.toggle-with-icon:checked::after {
+    position: absolute;
+    content: "\2713";
+    top: 2px;
+    left: 2px;
+    background: var(--white-color);
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    transition: 0.2s ease-in;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--success-color-06);
+}
+
+.toggle-with-icon:checked::after {
+    left: 50%;
+}
+.toggle-with-icon:checked:disabled{
+    background-color: var(--light-neutral-gray-02);
+}
+.toggle-with-icon:checked:hover:disabled {
+    background-color: var(--light-neutral-gray-02);
+}
+.toggle-with-icon:checked:disabled{
+    background-color: var(--light-neutral-gray-02);
+}
+.toggle-with-icon:checked:hover:disabled {
+    background-color: var(--light-neutral-gray-02);
+}
+.toggle-with-icon:checked:disabled:after{
+  color: var(--light-neutral-gray-02);
+}
+.toggle-with-icon:disabled{
+    background-color: var(--light-neutral-gray-02);
+}
+
+/* Toggle WithWords */
+
+.toggle-with-words {
+    position: relative;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: var(--light-neutral-gray-06);
+    border-radius: 46px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: 0.2s ease-in;
+    outline: none;
+}
+
+.toggle-with-words:checked {
+    background: var(--success-color-06);
+}
+
+.toggle-with-words::before {
+    content: '';
+    background: var(--white-color);
+    position: absolute;
+    border-radius: 50%;
+    top: 2px;
+    left: 2px;
+}
+
+.toggle-with-words:checked:hover {
+    background-color: var(--success-color-04);
+}
+
+.toggle-with-words:checked:focus {
+    outline: 1px solid var(--primary-color-03);
+    outline-offset: 2px;
+}
+
+.toggle-with-words:focus-visible {
+    outline: 1px solid var(--primary-color-03);
+    outline-offset: 2px;
+}
+
+.toggle-with-words:after {
+    content: "Off";
+    font-size: 8px;
+    position: absolute;
+    color: var(--white-color);
+    top: 50%;
+    left: 50%;
+    transform: translate(20%, -50%);
+    display: flex;
+    align-items: center;
+    transition: 0.2s ease-in;
+    
+}
+
+.toggle-with-words:checked::before {
+    left: 50%;
+}
+
+.toggle-with-words:checked::after {
+    content: 'On';
+    left: 0;
+    font-size: 8px;
+    transition: 0.2s ease-in;
+}
+.toggle-with-words:checked:disabled{
+    background-color: var(--light-neutral-gray-02);
+}
+.toggle-with-words:checked:hover:disabled {
+    background-color: var(--light-neutral-gray-02);
+}
+.toggle-with-words:checked:disabled:after{
+  color: var(--white-color);
+}
+.toggle-with-words:disabled{
+    background-color: var(--light-neutral-gray-02);
+}
